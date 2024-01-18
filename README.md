@@ -36,7 +36,7 @@ that make the reviewer discover your feature, i.e. "a first, this aspect, a and
 in the next commit sub-feature X is introduced". Sure, this is more work for
 you, the developer, but you know your work in and out, the reviewer doesn't yet.
 
-Find in this repo a branch `rebasing-easy` to play around with interactive
+Find in this repo a branch `learn-rebasing-easy` to play around with interactive
 rebasing. This tool allows you to rewrite the git history in every manner you
 like. Please be aware, you are rewriting the history for everybody, so do this
 only on work that others to not rely on. Typically, you only do this on your own
@@ -44,10 +44,10 @@ feature branches or on commits in main **that are not yet pushed to remote aka
 made public**. But with branch protection on the main branch, this shouldn't
 happen anyway. ;-)
 
-**Task 1**: Go ahead, checkout `rebasing-easy` and try to make the branch look
+**Task 1**: Go ahead, checkout `learn-rebasing-easy` and try to make the branch look
 like this:
 
-    A---B---C---D  rebasing-easy
+    A---B---C---D  learn-rebasing-easy
 
 ### I Accidentally Committed to Wrong Branch
 
