@@ -14,7 +14,42 @@ Additional content is very welcome. Just fork, crate two new branches:
 
 ## Use Cases
 
-### Accidentally Committed to Wrong Branch
+### Clean Up Feature Branches
+
+Working on a new feature on a feature branch is often a journey with hopefully
+lots of commits to be able to go back, with commits that fix typos, with commits
+that partially revert previous changes - over all - probably a medium to big
+mess. Hey, that's totally ok, that's good. Nobody creates production code right
+away.
+
+I hear you yelling: "But this messy branch gets merged using Squash and Merge
+anyway! Then why bother at all?"
+
+If all of the changes belong together and therefore are related, then you may be
+correct, BUT think about the person that has to dig through you feature branch
+doing a review. 20 commits working on 15 files with multiple changes of the same
+lines is a real burden on a reviewer and takes a lot of time. At the very least,
+make the life of the reviewer easier and be a guidance through your commit
+history. Commits like "fix typo", "add missing file" and the like only distract
+the work for the reviewer. Clean it up and have a bunch of meaningful commits
+that make the reviewer discover your feature, i.e. "a first, this aspect, a and
+in the next commit sub-feature X is introduced". Sure, this is more work for
+you, the developer, but you know your work in and out, the reviewer doesn't yet.
+
+Find in this repo a branch `rebasing-easy` to play around with interactive
+rebasing. This tool allows you to rewrite the git history in every manner you
+like. Please be aware, you are rewriting the history for everybody, so do this
+only on work that others to not rely on. Typically, you only do this on your own
+feature branches or on commits in main **that are not yet pushed to remote aka
+made public**. But with branch protection on the main branch, this shouldn't
+happen anyway. ;-)
+
+**Task 1**: Go ahead, checkout `rebasing-easy` and try to make the branch look
+like this:
+
+    A---B---C---D  rebasing-easy
+
+### I Accidentally Committed to Wrong Branch
 
 #### Symptom
 
