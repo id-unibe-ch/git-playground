@@ -49,6 +49,14 @@ like this:
 
     A---B---C---D  learn-rebasing-easy
 
+**Keep in mind**: Never ever rewrite history on branches/code that is already
+published aka pushed and probably used by others.
+
+There are [plenty of video tutorials on YouTube](https://www.youtube.com/results?search_query=git+rebasing)
+about this topic, one short I like is [this one](https://www.youtube.com/watch?v=AFpqO_7LfjQ)
+([typecraft_dev](https://www.youtube.com/@typecraft_dev) has a lot of interesting
+sort videos, especially on Neovim).
+
 ### I Accidentally Committed to Wrong Branch
 
 #### Symptom
