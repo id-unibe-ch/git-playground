@@ -57,6 +57,9 @@ about this topic, one short I like is [this one](https://www.youtube.com/watch?v
 ([typecraft_dev](https://www.youtube.com/@typecraft_dev) has a lot of interesting
 sort videos, especially on Neovim).
 
+In addition there's a [web-based game](https://learngitbranching.js.org/) to
+practice rebasing.
+
 ### I Accidentally Committed to Wrong Branch
 
 #### Symptom
